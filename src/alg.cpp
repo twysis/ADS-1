@@ -5,7 +5,7 @@
 
 
 bool checkPrime(uint64_t value) {
-for (int i = 2; i <= sqrt(value); i++){
+for (int i = 2; i <= sqrt(value); i++) {
 if (value % i == 0) {
 return false;
 } else {
@@ -28,8 +28,8 @@ return 2;
 return false;
 }
 uint64_t k = 1;
-for (int i = 3; x ; i++ ) {
-if (checkPrime(i)){
+for (int i = 3;  ; i++) {
+if (checkPrime(i)) {
 k = k + 1;
 if (k == n) {
 return i;
@@ -52,8 +52,7 @@ continue;
 
 uint64_t sumPrime(uint64_t hbound) {
 uint64_t sum = 0;
-for (int i = 0; i < hbound; i++)
-{
+for (int i = 0; i < hbound; i++) {
 if (checkPrime(i)) {
 sum += i;
 }
