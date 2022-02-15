@@ -29,8 +29,8 @@ return 2;
 else if (n <= 0) {
 return false;
 }
-int k = 1;
-for (int i = 4; ;i++ ) {
+uint64_t k = 1;
+for (int i = 3; ;i++ ) {
 if (checkPrime(i)) {
 k = k + 1;
 if (k == n) {
@@ -55,7 +55,7 @@ continue;
 }
 
 uint64_t sumPrime(uint64_t hbound) {
-int sum = 0;
+uint64_t sum = 0;
 for (int i = 0; i < hbound; i++)
 {
 if (checkPrime(i)) {
